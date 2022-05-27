@@ -171,13 +171,11 @@ h3 {
   font-size: 2rem;
   @include card();
   transform: rotate(15deg);
-}
-
-.looking-for-work:hover {
-
   animation: shake 0.5s;
   animation-iteration-count: infinite;
 }
+
+.looking-for-work:hover {}
 
 .looking-for-work h3 {
   margin: 0;
@@ -339,6 +337,85 @@ h3 {
   text-decoration: none;
 }
 
+.section-display {
+  background-color: #DD6031;
+  padding: 4% 0;
+}
+
+.display-project {
+  width: 75%;
+  margin: auto;
+}
+
+.project-preview {
+  border-radius: 10px;
+
+}
+
+.projects {
+  background-color: #DD6031;
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  margin: auto;
+  padding: 4% 0;
+}
+
+.project-cards {
+  background-color: #E7BB73;
+  border-radius: 10px;
+  color: #9E3D1A;
+  font-weight: 700;
+  padding: 2% 6% 4%;
+}
+
+.project-cards h3 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  gap: 5%;
+  padding-top: 4%;
+  justify-content: center;
+  align-items: center;
+}
+.container p {
+  font-size: 1.3rem;
+
+}
+
+.container a {
+  width: 50%;
+}
+
+.project-image img {
+  height: auto;
+  width: 500px;
+  max-width: 100%;
+  min-width: 300px;
+
+}
+
+.project-image img:hover {
+  transform: translateY(-10px);
+}
+
+.more-details {
+  text-decoration: none;
+  color: #531CB3;
+
+
+}
+
+.more-details:hover {
+  color: #DD6031;
+}
+
 footer {
   display: flex;
   align-items: center;
@@ -364,4 +441,10 @@ footer {
   gap: 2%;
   align-items: center;
 
+}
+
+@media only screen and(max-width: 900px) {
+  .project-image img {
+    display: none;
+  }
 }
